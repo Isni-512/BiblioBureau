@@ -63,69 +63,69 @@
         <TabControl x:Name="tabcontrol" DockPanel.Dock="Top" Style="{StaticResource CustomTabControlStyle}">
 
             <!-- Onglet Hôpital: Gestion des informations relatives aux hôpitaux -->
-            <TabItem x:Name="tabitemHopital" Header="{x:Static properties:Resources.Hospital}" Style="{StaticResource CustomTabItemStyle}">
+            <TabItem x:Name="tabitemAuteur" Header="{x:Static properties:Resources.Hospital}" Style="{StaticResource CustomTabItemStyle}">
                 <StackPanel Orientation="Vertical">
                     <!-- Champ pour saisir le nom de l'hôpital -->
                     <StackPanel Orientation="Horizontal">
-                        <Label Name="lbNomHopital" Content="{x:Static properties:Resources.Name}"/>
-                        <TextBox x:Name="tbNomHopital"/>
+                        <Label Name="lbNomAuteur" Content="{x:Static properties:Resources.Name}"/>
+                        <TextBox x:Name="tbNomAuteur"/>
                     </StackPanel>
 
                     <!-- Champ pour saisir l'adresse de l'hôpital -->
                     <StackPanel Orientation="Horizontal">
-                        <Label Name="lbAdresseHopital" Content="{x:Static properties:Resources.Address}"/>
-                        <TextBox x:Name="tbAdresseHopital"/>
+                        <Label Name="lbAdresseAuteur" Content="{x:Static properties:Resources.Address}"/>
+                        <TextBox x:Name="tbAdresseAuteur"/>
                     </StackPanel>
 
                     <!-- Champ pour saisir le numéro de téléphone de l'hôpital -->
                     <StackPanel Orientation="Horizontal">
-                        <Label Name="lbTelHopital" Content="{x:Static properties:Resources.Phone}"/>
-                        <TextBox x:Name="tbTelHopital"/>
+                        <Label Name="lbTelAuteur" Content="{x:Static properties:Resources.Phone}"/>
+                        <TextBox x:Name="tbTelAuteur"/>
                     </StackPanel>
 
                     <!-- Groupe de boutons pour les opérations CRUD sur les hôpitaux -->
                     <StackPanel Orientation="Horizontal">
-                        <Button x:Name="btnAjouterHopital" Content="{x:Static properties:Resources.Add}" Click="btnAjouterHopital_Click"/>
-                        <Button x:Name="btnModifierHopital" Content="{x:Static properties:Resources.Update}" Click="btnModifierHopital_Click"/>
-                        <Button x:Name="btnSupprimerHopital" Content="{x:Static properties:Resources.Delete}" Click="btnSupprimerHopital_Click"/>
+                        <Button x:Name="btnAjouterAuteur" Content="{x:Static properties:Resources.Add}" Click="btnAjouterAuteur_Click"/>
+                        <Button x:Name="btnModifierAuteur" Content="{x:Static properties:Resources.Update}" Click="btnModifierAuteur_Click"/>
+                        <Button x:Name="btnSupprimerAuteur" Content="{x:Static properties:Resources.Delete}" Click="btnSupprimerAuteur_Click"/>
                     </StackPanel>
 
                     <!-- Grille de données affichant la liste des hôpitaux avec leurs propriétés -->
-                    <DataGrid x:Name="dgHopital" ItemsSource="{Binding Hopitaux}" SelectionChanged="dgHopital_SelectionChanged">
+                    <DataGrid x:Name="dgAuteur" ItemsSource="{Binding Hopitaux}" SelectionChanged="dgAuteur_SelectionChanged">
                         <DataGrid.Columns>
-                            <DataGridTextColumn x:Name="dgcNomHopital" Header="{x:Static properties:Resources.Name}" Binding="{Binding Nom}" Width="*"/>
-                            <DataGridTextColumn x:Name="dgcAdresseHopital" Header="{x:Static properties:Resources.Address}" Binding="{Binding Adresse}" Width="*"/>
-                            <DataGridTextColumn x:Name="dgcTelHopital" Header="{x:Static properties:Resources.Phone}" Binding="{Binding Telephone}" Width="*"/>
+                            <DataGridTextColumn x:Name="dgcNomAuteur" Header="{x:Static properties:Resources.Name}" Binding="{Binding Nom}" Width="*"/>
+                            <DataGridTextColumn x:Name="dgcAdresseAuteur" Header="{x:Static properties:Resources.Address}" Binding="{Binding Adresse}" Width="*"/>
+                            <DataGridTextColumn x:Name="dgcTelAuteur" Header="{x:Static properties:Resources.Phone}" Binding="{Binding Telephone}" Width="*"/>
                         </DataGrid.Columns>
                     </DataGrid>
                 </StackPanel>
             </TabItem>
 
             <!-- Onglet Médecin: Gestion des informations relatives aux médecins -->
-            <TabItem x:Name="tabitemMedecin" Header="{x:Static properties:Resources.Doctor}" Style="{StaticResource CustomTabItemStyle}">
+            <TabItem x:Name="tabitemEditeur" Header="{x:Static properties:Resources.Doctor}" Style="{StaticResource CustomTabItemStyle}">
                 <StackPanel Orientation="Vertical">
                     <!-- Champ pour saisir le prénom du médecin -->
                     <StackPanel Orientation="Horizontal">
-                        <Label Name="lbPrenomMed" Content="{x:Static properties:Resources.FirstName}"/>
-                        <TextBox x:Name="tbPrenomMed"/>
+                        <Label Name="lbPrenomEditeur" Content="{x:Static properties:Resources.FirstName}"/>
+                        <TextBox x:Name="tbPrenomEditeur"/>
                     </StackPanel>
 
                     <!-- Champ pour saisir le nom du médecin -->
                     <StackPanel Orientation="Horizontal">
-                        <Label Name="lbNomMed" Content="{x:Static properties:Resources.LastName}"/>
+                        <Label Name="lbNomEditeur" Content="{x:Static properties:Resources.LastName}"/>
                         <TextBox x:Name="tbNomMed"/>
                     </StackPanel>
 
                     <!-- Champ pour saisir le numéro de téléphone du médecin -->
                     <StackPanel Orientation="Horizontal">
-                        <Label Name="lbTelMed" Content="{x:Static properties:Resources.Phone}"/>
-                        <TextBox x:Name="tbTelMed"/>
+                        <Label Name="lbTelEditeur" Content="{x:Static properties:Resources.Phone}"/>
+                        <TextBox x:Name="tbTelEditeur"/>
                     </StackPanel>
 
                     <!-- Sélecteur d'hôpital associé au médecin -->
                     <StackPanel Orientation="Horizontal">
-                        <Label x:Name="lbHopitalMed" Content="{x:Static properties:Resources.Hospital}"/>
-                        <ComboBox Name="cbHopitalMedecin">
+                        <Label x:Name="lbHopitalEditeur" Content="{x:Static properties:Resources.Hospital}"/>
+                        <ComboBox Name="cbHopitalEditeur">
                             <ComboBoxItem Content="H1"/>
                             <ComboBoxItem Content="H2"/>
                         </ComboBox>
@@ -133,47 +133,47 @@
 
                     <!-- Groupe de boutons pour les opérations CRUD sur les médecins -->
                     <StackPanel Orientation="Horizontal">
-                        <Button x:Name="btnAjouterMedecin" Content="{x:Static properties:Resources.Add}" Click="btnAjouterMedecin_Click"/>
-                        <Button x:Name="btnModifierMedecin" Content="{x:Static properties:Resources.Update}" Click="btnModifierMedecin_Click"/>
-                        <Button x:Name="btnSupprimerMedecin" Content="{x:Static properties:Resources.Delete}" Click="btnSupprimerMedecin_Click"/>
+                        <Button x:Name="btnAjouterEditeur" Content="{x:Static properties:Resources.Add}" Click="btnAjouterEditeur_Click"/>
+                        <Button x:Name="btnModifierEditeur" Content="{x:Static properties:Resources.Update}" Click="btnModifierEditeur_Click"/>
+                        <Button x:Name="btnSupprimerEditeur" Content="{x:Static properties:Resources.Delete}" Click="btnSupprimerEditeur_Click"/>
                     </StackPanel>
 
                     <!-- Grille de données affichant la liste des médecins avec leurs propriétés -->
                     <DataGrid x:Name="dgMedecin" ItemsSource="{Binding Medecins}" SelectionChanged="dgMedecin_SelectionChanged">
                         <DataGrid.Columns>
-                            <DataGridTextColumn x:Name="dgcNomMed" Header="{x:Static properties:Resources.LastName}" Binding="{Binding Nom}" Width="*"/>
-                            <DataGridTextColumn x:Name="dgcPrenomMed" Header="{x:Static properties:Resources.FirstName}" Binding="{Binding Prenom}" Width="*"/>
-                            <DataGridTextColumn x:Name="dgcTelMed" Header="{x:Static properties:Resources.Phone}" Binding="{Binding Telephone}" Width="*"/>
+                            <DataGridTextColumn x:Name="dgcNomEditeur" Header="{x:Static properties:Resources.LastName}" Binding="{Binding Nom}" Width="*"/>
+                            <DataGridTextColumn x:Name="dgcPrenomEditeur" Header="{x:Static properties:Resources.FirstName}" Binding="{Binding Prenom}" Width="*"/>
+                            <DataGridTextColumn x:Name="dgcTelEditeur" Header="{x:Static properties:Resources.Phone}" Binding="{Binding Telephone}" Width="*"/>
                         </DataGrid.Columns>
                     </DataGrid>
                 </StackPanel>
             </TabItem>
 
             <!-- Onglet Infirmier: Gestion des informations relatives aux infirmiers -->
-            <TabItem x:Name="tabitemInfirmier" Header="{x:Static properties:Resources.Nurse}" Style="{StaticResource CustomTabItemStyle}">
+            <TabItem x:Name="tabitemLivre" Header="{x:Static properties:Resources.Nurse}" Style="{StaticResource CustomTabItemStyle}">
                 <StackPanel Orientation="Vertical">
                     <!-- Champ pour saisir le prénom de l'infirmier -->
                     <StackPanel Orientation="Horizontal">
-                        <Label Name="lbPrenomInf" Content="{x:Static properties:Resources.FirstName}"/>
-                        <TextBox x:Name="tbPrenomInf"/>
+                        <Label Name="lbPrenomLivre" Content="{x:Static properties:Resources.FirstName}"/>
+                        <TextBox x:Name="tbPrenomLivre"/>
                     </StackPanel>
 
                     <!-- Champ pour saisir le nom de l'infirmier -->
                     <StackPanel Orientation="Horizontal">
-                        <Label Name="lbNomInf" Content="{x:Static properties:Resources.LastName}"/>
-                        <TextBox x:Name="tbNomInf"/>
+                        <Label Name="lbNomLivre" Content="{x:Static properties:Resources.LastName}"/>
+                        <TextBox x:Name="tbNomLivre"/>
                     </StackPanel>
 
                     <!-- Champ pour saisir le numéro de téléphone de l'infirmier -->
                     <StackPanel Orientation="Horizontal">
-                        <Label Name="lbTelInf" Content="{x:Static properties:Resources.Phone}"/>
-                        <TextBox x:Name="tbTelInf"/>
+                        <Label Name="lbTelLivre" Content="{x:Static properties:Resources.Phone}"/>
+                        <TextBox x:Name="tbTelLivre"/>
                     </StackPanel>
 
                     <!-- Sélecteur d'hôpital associé à l'infirmier -->
                     <StackPanel Orientation="Horizontal">
-                        <Label Name="lbHopitalInf" Content="{x:Static properties:Resources.Hospital}"/>
-                        <ComboBox x:Name="cbHopitalInfirmier">
+                        <Label Name="lbHopitalLivre" Content="{x:Static properties:Resources.Hospital}"/>
+                        <ComboBox x:Name="cbHopitalLivre">
                             <ComboBoxItem Content="H1"/>
                             <ComboBoxItem Content="H2"/>
                         </ComboBox>
@@ -181,17 +181,17 @@
 
                     <!-- Groupe de boutons pour les opérations CRUD sur les infirmiers -->
                     <StackPanel Orientation="Horizontal">
-                        <Button x:Name="btnAjouterInf" Content="{x:Static properties:Resources.Add}" Click="btnAjouterInf_Click"/>
-                        <Button x:Name="btnModifierInf" Content="{x:Static properties:Resources.Update}" Click="btnModifierInf_Click"/>
-                        <Button x:Name="btnSupprimerInf" Content="{x:Static properties:Resources.Delete}" Click="btnSupprimerInf_Click"/>
+                        <Button x:Name="btnAjouterLivre" Content="{x:Static properties:Resources.Add}" Click="btnAjouterLivre_Click"/>
+                        <Button x:Name="btnModifierLivre" Content="{x:Static properties:Resources.Update}" Click="btnModifierLivre_Click"/>
+                        <Button x:Name="btnSupprimerLivre" Content="{x:Static properties:Resources.Delete}" Click="btnSupprimerLivre_Click"/>
                     </StackPanel>
 
                     <!-- Grille de données affichant la liste des infirmiers avec leurs propriétés -->
                     <DataGrid x:Name="dgInfirmier" ItemsSource="{Binding Infirmiers}" SelectionChanged="dgInfirmier_SelectionChanged">
                         <DataGrid.Columns>
-                            <DataGridTextColumn x:Name="dgcNomInf" Header="{x:Static properties:Resources.LastName}" Binding="{Binding Nom}" Width="*"/>
-                            <DataGridTextColumn x:Name="dgcPrenomInf" Header="{x:Static properties:Resources.FirstName}" Binding="{Binding Prenom}" Width="*"/>
-                            <DataGridTextColumn x:Name="dgcTelInf" Header="{x:Static properties:Resources.Phone}" Binding="{Binding Telephone}" Width="*"/>
+                            <DataGridTextColumn x:Name="dgcNomlivre" Header="{x:Static properties:Resources.LastName}" Binding="{Binding Nom}" Width="*"/>
+                            <DataGridTextColumn x:Name="dgcPrenomLivre" Header="{x:Static properties:Resources.FirstName}" Binding="{Binding Prenom}" Width="*"/>
+                            <DataGridTextColumn x:Name="dgcTelLivre" Header="{x:Static properties:Resources.Phone}" Binding="{Binding Telephone}" Width="*"/>
                         </DataGrid.Columns>
                     </DataGrid>
                 </StackPanel>
@@ -202,57 +202,57 @@
                     <StackPanel Orientation="Horizontal">
 
                         <Label x:Name="lbRecherche" Content="Recherche par:" Width="120"/>
-                        <RadioButton x:Name="rbSelectionRechercheParHopital" Content="{x:Static properties:Resources.Hospital}" Checked="rbSelectionRechercheParHopital_Checked"/>
-                        <RadioButton x:Name="rbSelectionRechercheMedecin" Content="{x:Static properties:Resources.Doctor}" Checked="rbSelectionRechercheMedecin_Checked"/>
-                        <RadioButton x:Name="rbSelectionRechercheInfirmier" Content="{x:Static properties:Resources.Nurse}" Checked="rbSelectionRechercheInfirmier_Checked"/>
+                        <RadioButton x:Name="rbSelectionRechercheParAuteur" Content="{x:Static properties:Resources.Hospital}" Checked="rbSelectionRechercheParAuteur_Checked"/>
+                        <RadioButton x:Name="rbSelectionRechercheEditeur" Content="{x:Static properties:Resources.Doctor}" Checked="rbSelectionRechercheEditeur_Checked"/>
+                        <RadioButton x:Name="rbSelectionRechercheLivre" Content="{x:Static properties:Resources.Nurse}" Checked="rbSelectionRechercheLivre_Checked"/>
 
                     </StackPanel>
-                    <StackPanel x:Name="spRechercheHopital" Orientation="Horizontal" Visibility="Visible">
+                    <StackPanel x:Name="spRechercheAuteur" Orientation="Horizontal" Visibility="Visible">
                         <Label Content="{x:Static properties:Resources.Doctor}"/>
-                        <RadioButton x:Name="rbRechercheParMedecin" Content="{x:Static properties:Resources.Doctor}" Checked="rbRechercheParMedecin_Checked"/>
+                        <RadioButton x:Name="rbRechercheParEditeur" Content="{x:Static properties:Resources.Doctor}" Checked="rbRechercheParEditeur_Checked"/>
                         <Label Content="{x:Static properties:Resources.Nurse}"/>
-                        <RadioButton x:Name="rbRechercheParInfirmier" Content="{x:Static properties:Resources.Nurse}" Checked="rbRechercheParInfirmier_Checked"/>
+                        <RadioButton x:Name="rbRechercheParLivre" Content="{x:Static properties:Resources.Nurse}" Checked="rbRechercheParLivre_Checked"/>
                         <Label Content="{x:Static properties:Resources.Hospital}"/>
-                        <ComboBox x:Name="cbRechercheParHopital" SelectionChanged="cbRechercheParHopital_SelectionChanged"/>
+                        <ComboBox x:Name="cbRechercheParAuteur" SelectionChanged="cbRechercheParAuteur_SelectionChanged"/>
                     </StackPanel>
 
-                    <StackPanel x:Name="spRechercheMedecin" Orientation="Horizontal" Visibility="Hidden">
+                    <StackPanel x:Name="spRechercheEditeur" Orientation="Horizontal" Visibility="Hidden">
                         <Label Content="{x:Static properties:Resources.Doctor}"/>
-                        <TextBox x:Name="tbRechercheParMedecin" TextChanged="tbRechercheParMedecin_TextChanged"/>
+                        <TextBox x:Name="tbRechercheParEditeur" TextChanged="tbRechercheParEditeur_TextChanged"/>
                     </StackPanel>
 
-                    <StackPanel x:Name="spRechercheInfirmier" Orientation="Horizontal" Visibility="Hidden">
+                    <StackPanel x:Name="spRechercheLivre" Orientation="Horizontal" Visibility="Hidden">
                         <Label Content="{x:Static properties:Resources.Nurse}"/>
-                        <TextBox x:Name="tbRechercheParInfirmier" TextChanged="tbRechercheParInfirmier_TextChanged"/>
+                        <TextBox x:Name="tbRechercheParLivre" TextChanged="tbRechercheParLivre_TextChanged"/>
                     </StackPanel>
 
-                    <DataGrid x:Name="dgResultatRechercheHopital" Visibility="Visible">
+                    <DataGrid x:Name="dgResultatRechercheAuteur" Visibility="Visible">
                         <DataGrid.Columns>
-                            <DataGridTextColumn x:Name="dgcResultatRechercheHopitalNom" Header="{x:Static properties:Resources.Name}" Binding="{Binding Nom}" Width="*"/>
-                            <DataGridTextColumn x:Name="dgcResultatRechercheHopitalAdresse" Header="{x:Static properties:Resources.Address}" Binding="{Binding Adresse}" Width="*"/>
-                            <DataGridTextColumn x:Name="dgcResultatRechercheHopitalTelephone" Header="{x:Static properties:Resources.Phone}" Binding="{Binding Telephone}" Width="*"/>
+                            <DataGridTextColumn x:Name="dgcResultatRechercheAuteurNom" Header="{x:Static properties:Resources.Name}" Binding="{Binding Nom}" Width="*"/>
+                            <DataGridTextColumn x:Name="dgcResultatRechercheAuteurAdresse" Header="{x:Static properties:Resources.Address}" Binding="{Binding Adresse}" Width="*"/>
+                            <DataGridTextColumn x:Name="dgcResultatRechercheAuteurTelephone" Header="{x:Static properties:Resources.Phone}" Binding="{Binding Telephone}" Width="*"/>
                         </DataGrid.Columns>
                     </DataGrid>
 
-                    <DataGrid x:Name="dgResultatRechercheMedecin" Visibility="Collapsed">
+                    <DataGrid x:Name="dgResultatRechercheEditeur" Visibility="Collapsed">
                         <DataGrid.Columns>
-                            <DataGridTextColumn x:Name="dgcResultatRechercheMedecinNom" Header="{x:Static properties:Resources.FirstName}" Binding="{Binding Nom}" Width="*"/>
-                            <DataGridTextColumn x:Name="dgcResultatRechercheMedecinPrenom" Header="{x:Static properties:Resources.LastName}" Binding="{Binding Prenom}" Width="*"/>
-                            <DataGridTextColumn x:Name="dgcResultatRechercheMedecintelephone" Header="{x:Static properties:Resources.Phone}" Binding="{Binding Telephone}" Width="*"/>
+                            <DataGridTextColumn x:Name="dgcResultatRechercheEditeurNom" Header="{x:Static properties:Resources.FirstName}" Binding="{Binding Nom}" Width="*"/>
+                            <DataGridTextColumn x:Name="dgcResultatRechercheEditeurPrenom" Header="{x:Static properties:Resources.LastName}" Binding="{Binding Prenom}" Width="*"/>
+                            <DataGridTextColumn x:Name="dgcResultatRechercheEditeurtelephone" Header="{x:Static properties:Resources.Phone}" Binding="{Binding Telephone}" Width="*"/>
                         </DataGrid.Columns>
                     </DataGrid>
 
-                    <DataGrid x:Name="dgResultatRechercheInfirmier" Visibility="Collapsed">
+                    <DataGrid x:Name="dgResultatRechercheLivre" Visibility="Collapsed">
                         <DataGrid.Columns>
-                            <DataGridTextColumn x:Name="dgcResultatRechercheInfirmierlNom" Header="{x:Static properties:Resources.FirstName}" Binding="{Binding Nom}" Width="*"/>
-                            <DataGridTextColumn x:Name="dgcResultatRechercheInfirmierPrenom" Header="{x:Static properties:Resources.LastName}" Binding="{Binding Prenom}" Width="*"/>
-                            <DataGridTextColumn x:Name="dgcResultatRechercheInfirmierTelephone" Header="{x:Static properties:Resources.Phone}" Binding="{Binding Telephone}" Width="*"/>
+                            <DataGridTextColumn x:Name="dgcResultatRechercheLivreNom" Header="{x:Static properties:Resources.FirstName}" Binding="{Binding Nom}" Width="*"/>
+                            <DataGridTextColumn x:Name="dgcResultatRechercheLivrePrenom" Header="{x:Static properties:Resources.LastName}" Binding="{Binding Prenom}" Width="*"/>
+                            <DataGridTextColumn x:Name="dgcResultatRechercheLivreTelephone" Header="{x:Static properties:Resources.Phone}" Binding="{Binding Telephone}" Width="*"/>
                         </DataGrid.Columns>
                     </DataGrid>
 
 
                 </StackPanel>
-                
+
             </TabItem>
         </TabControl>
     </DockPanel>

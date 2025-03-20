@@ -39,7 +39,7 @@ namespace HopitalDB
             LangueParDefaut();
             dgMedecin.ItemsSource = Medecins;
             dgInfirmier.ItemsSource = Infirmiers;
-            dgHopital.ItemsSource = Hopitaux;
+            dgAuteur.ItemsSource = Hopitaux;
             this.WindowState = WindowState.Maximized;
         }
 
@@ -128,48 +128,48 @@ namespace HopitalDB
             toolbar_btn_Modifier.ToolTip = Properties.Resources.Update;
             toolbar_btn_Supprimer.ToolTip = Properties.Resources.Delete;
 
-            lbAdresseHopital.Content = Properties.Resources.Address;
-            lbNomHopital.Content = Properties.Resources.Name;
-            lbTelHopital.Content = Properties.Resources.Phone;
+            lbAdresseAuteur.Content = Properties.Resources.Address;
+            lbNomAuteur.Content = Properties.Resources.Name;
+            lbTelAuteur.Content = Properties.Resources.Phone;
 
-            btnAjouterHopital.Content = Properties.Resources.Add;
-            btnModifierHopital.Content = Properties.Resources.Update;
-            btnSupprimerHopital.Content = Properties.Resources.Delete;
+            btnAjouterAuteur.Content = Properties.Resources.Add;
+            btnModifierAuteur.Content = Properties.Resources.Update;
+            btnSupprimerAuteur.Content = Properties.Resources.Delete;
 
-            dgcNomHopital.Header = Properties.Resources.Name;
-            dgcAdresseHopital.Header = Properties.Resources.Address;
-            dgcTelHopital.Header = Properties.Resources.Phone;
+            dgcNomAuteur.Header = Properties.Resources.Name;
+            dgcAdresseAuteur.Header = Properties.Resources.Address;
+            dgcTelAuteur.Header = Properties.Resources.Phone;
 
-            tabitemInfirmier.Header = Properties.Resources.Nurse;
-            tabitemMedecin.Header = Properties.Resources.Doctor;
-            tabitemHopital.Header = Properties.Resources.Hospital;
+            tabitemLivre.Header = Properties.Resources.Nurse;
+            tabitemEditeur.Header = Properties.Resources.Doctor;
+            tabitemAuteur.Header = Properties.Resources.Hospital;
 
-            lbPrenomInf.Content = Properties.Resources.FirstName;
-            lbNomInf.Content = Properties.Resources.LastName;
-            lbTelInf.Content = Properties.Resources.Phone;
+            lbPrenomLivre.Content = Properties.Resources.FirstName;
+            lbNomLivre.Content = Properties.Resources.LastName;
+            lbTelLivre.Content = Properties.Resources.Phone;
 
-            btnAjouterInf.Content = Properties.Resources.Add;
-            btnModifierInf.Content = Properties.Resources.Update;
-            btnSupprimerInf.Content = Properties.Resources.Delete;
+            btnAjouterLivre.Content = Properties.Resources.Add;
+            btnModifierLivre.Content = Properties.Resources.Update;
+            btnSupprimerLivre.Content = Properties.Resources.Delete;
 
-            dgcNomInf.Header = Properties.Resources.LastName;
-            dgcPrenomInf.Header = Properties.Resources.FirstName;
-            dgcTelInf.Header = Properties.Resources.Phone;
+            dgcNomlivre.Header = Properties.Resources.LastName;
+            dgcPrenomLivre.Header = Properties.Resources.FirstName;
+            dgcTelLivre.Header = Properties.Resources.Phone;
 
-            lbPrenomMed.Content = Properties.Resources.FirstName;
-            lbNomMed.Content = Properties.Resources.LastName;
-            lbTelMed.Content = Properties.Resources.Phone;
+            lbPrenomEditeur.Content = Properties.Resources.FirstName;
+            lbNomEditeur.Content = Properties.Resources.LastName;
+            lbTelEditeur.Content = Properties.Resources.Phone;
 
-            btnAjouterMedecin.Content = Properties.Resources.Add;
-            btnModifierMedecin.Content = Properties.Resources.Update;
-            btnSupprimerMedecin.Content = Properties.Resources.Delete;
+            btnAjouterEditeur.Content = Properties.Resources.Add;
+            btnModifierEditeur.Content = Properties.Resources.Update;
+            btnSupprimerEditeur.Content = Properties.Resources.Delete;
 
-            dgcNomMed.Header = Properties.Resources.LastName;
-            dgcPrenomMed.Header = Properties.Resources.FirstName;
-            dgcTelMed.Header = Properties.Resources.Phone;
+            dgcNomEditeur.Header = Properties.Resources.LastName;
+            dgcPrenomEditeur.Header = Properties.Resources.FirstName;
+            dgcTelEditeur.Header = Properties.Resources.Phone;
 
-            lbHopitalInf.Content = Properties.Resources.Hospital;
-            lbHopitalMed.Content = Properties.Resources.Hospital;
+            lbHopitalLivre.Content = Properties.Resources.Hospital;
+            lbHopitalEditeur.Content = Properties.Resources.Hospital;
         }
 
         /// <summary>
@@ -177,7 +177,7 @@ namespace HopitalDB
         /// </summary>
         /// <param name="sender">Objet qui a déclenché l'événement</param>
         /// <param name="e">Arguments de l'événement</param>
-        private void btnAjouterHopital_Click(object sender, RoutedEventArgs e)
+        private void btnAjouterAuteur_Click(object sender, RoutedEventArgs e)
         {
             AjouterHopital();
         }
@@ -189,16 +189,16 @@ namespace HopitalDB
         public void AjouterHopital()
         {
             // Vérifie si un hôpital avec le même nom et téléphone existe déjà dans la collection
-            Hopital HopitalExistant = Hopitaux.FirstOrDefault(h => h.Nom == tbNomHopital.Text && h.Telephone == tbTelHopital.Text);
+            Hopital HopitalExistant = Hopitaux.FirstOrDefault(h => h.Nom == tbNomAuteur.Text && h.Telephone == tbTelAuteur.Text);
 
             if (HopitalExistant == null)
             {
                 // Création d'un nouvel objet Hopital avec les données saisies
                 Hopital NouveauHopital = new Hopital();
 
-                NouveauHopital.Nom = tbNomHopital.Text;
-                NouveauHopital.Adresse = tbAdresseHopital.Text;
-                NouveauHopital.Telephone = tbTelHopital.Text;
+                NouveauHopital.Nom = tbNomAuteur.Text;
+                NouveauHopital.Adresse = tbAdresseAuteur.Text;
+                NouveauHopital.Telephone = tbTelAuteur.Text;
 
                 // Ajout de l'hôpital à la collection et mise à jour des ComboBox d'hôpitaux
                 Hopitaux.Add(NouveauHopital);
@@ -218,7 +218,7 @@ namespace HopitalDB
         /// </summary>
         /// <param name="sender">Objet qui a déclenché l'événement</param>
         /// <param name="e">Arguments de l'événement</param>
-        private void btnModifierHopital_Click(object sender, RoutedEventArgs e)
+        private void btnModifierAuteur_Click(object sender, RoutedEventArgs e)
         {
             ModifierHopital();
         }
@@ -230,15 +230,15 @@ namespace HopitalDB
         public void ModifierHopital()
         {
             // Vérifie si un hôpital est sélectionné dans le DataGrid
-            if (dgHopital.SelectedItem is Hopital LigneSelectionnee)
+            if (dgAuteur.SelectedItem is Hopital LigneSelectionnee)
             {
                 // Mise à jour des propriétés de l'hôpital sélectionné avec les valeurs saisies
-                LigneSelectionnee.Nom = tbNomHopital.Text;
-                LigneSelectionnee.Adresse = tbAdresseHopital.Text;
-                LigneSelectionnee.Telephone = tbTelHopital.Text;
+                LigneSelectionnee.Nom = tbNomAuteur.Text;
+                LigneSelectionnee.Adresse = tbAdresseAuteur.Text;
+                LigneSelectionnee.Telephone = tbTelAuteur.Text;
 
                 // Rafraîchissement de l'affichage et mise à jour des ComboBox d'hôpitaux
-                dgHopital.Items.Refresh();
+                dgAuteur.Items.Refresh();
                 MettreAjourListeHopitaux();
 
                 tbStatus.Text = Properties.Resources.UpdateHospital;
@@ -257,7 +257,7 @@ namespace HopitalDB
         /// </summary>
         /// <param name="sender">Objet qui a déclenché l'événement</param>
         /// <param name="e">Arguments de l'événement</param>
-        private void btnSupprimerHopital_Click(object sender, RoutedEventArgs e)
+        private void btnSupprimerAuteur_Click(object sender, RoutedEventArgs e)
         {
             SupprimerHopital();
         }
@@ -269,7 +269,7 @@ namespace HopitalDB
         public void SupprimerHopital()
         {
             // Vérifie si un hôpital est sélectionné dans le DataGrid
-            if (dgHopital.SelectedItem is Hopital LigneSelectionnee)
+            if (dgAuteur.SelectedItem is Hopital LigneSelectionnee)
             {
                 // Supprime l'hôpital de la collection et met à jour les ComboBox d'hôpitaux
                 Hopitaux.Remove(LigneSelectionnee);
@@ -291,14 +291,14 @@ namespace HopitalDB
         /// </summary>
         /// <param name="sender">Objet qui a déclenché l'événement</param>
         /// <param name="e">Arguments de l'événement</param>
-        private void dgHopital_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void dgAuteur_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             // Si un hôpital est sélectionné, affiche ses informations dans les TextBox
-            if (dgHopital.SelectedItem is Hopital LigneSelectionne)
+            if (dgAuteur.SelectedItem is Hopital LigneSelectionne)
             {
-                tbNomHopital.Text = LigneSelectionne.Nom;
-                tbAdresseHopital.Text = LigneSelectionne.Adresse;
-                tbTelHopital.Text = LigneSelectionne.Telephone;
+                tbNomAuteur.Text = LigneSelectionne.Nom;
+                tbAdresseAuteur.Text = LigneSelectionne.Adresse;
+                tbTelAuteur.Text = LigneSelectionne.Telephone;
             }
         }
 
@@ -309,16 +309,16 @@ namespace HopitalDB
         public void MettreAjourListeHopitaux()
         {
             // Vide les ComboBox existants
-            cbHopitalInfirmier.Items.Clear();
-            cbHopitalMedecin.Items.Clear();
-            cbRechercheParHopital.Items.Clear();
+            cbHopitalLivre.Items.Clear();
+            cbHopitalEditeur.Items.Clear();
+            cbRechercheParAuteur.Items.Clear();
 
             // Remplit les ComboBox avec les noms des hôpitaux disponibles
             foreach (Hopital hopital in Hopitaux)
             {
-                cbHopitalInfirmier.Items.Add(hopital.Nom);
-                cbHopitalMedecin.Items.Add(hopital.Nom);
-                cbRechercheParHopital.Items.Add(hopital.Nom);
+                cbHopitalLivre.Items.Add(hopital.Nom);
+                cbHopitalEditeur.Items.Add(hopital.Nom);
+                cbRechercheParAuteur.Items.Add(hopital.Nom);
             }
         }
 
@@ -327,7 +327,7 @@ namespace HopitalDB
         /// </summary>
         /// <param name="sender">Objet qui a déclenché l'événement</param>
         /// <param name="e">Arguments de l'événement</param>
-        private void btnAjouterMedecin_Click(object sender, RoutedEventArgs e)
+        private void btnAjouterEditeur_Click(object sender, RoutedEventArgs e)
         {
             AjouterMedecin();
         }
@@ -339,9 +339,9 @@ namespace HopitalDB
         public void AjouterMedecin()
         {
             // Vérifie qu'un hôpital est sélectionné dans le ComboBox
-            if (cbHopitalMedecin.SelectedItem != null)
+            if (cbHopitalEditeur.SelectedItem != null)
             {
-                string HopitalNomSelectionne = cbHopitalMedecin.SelectedItem.ToString();
+                string HopitalNomSelectionne = cbHopitalEditeur.SelectedItem.ToString();
 
                 // Recherche l'hôpital sélectionné dans la collection
                 Hopital hopitalExistant = Hopitaux.FirstOrDefault(h => h.Nom == HopitalNomSelectionne);
@@ -356,8 +356,8 @@ namespace HopitalDB
                     Medecin NouveauMedecin = new Medecin
                     {
                         Nom = tbNomMed.Text,
-                        Prenom = tbPrenomMed.Text,
-                        Telephone = tbTelMed.Text,
+                        Prenom = tbPrenomEditeur.Text,
+                        Telephone = tbTelEditeur.Text,
                         hopital = hopitalExistant
                     };
 
@@ -379,7 +379,7 @@ namespace HopitalDB
         /// </summary>
         /// <param name="sender">Objet qui a déclenché l'événement</param>
         /// <param name="e">Arguments de l'événement</param>
-        private void btnModifierMedecin_Click(object sender, RoutedEventArgs e)
+        private void btnModifierEditeur_Click(object sender, RoutedEventArgs e)
         {
             ModifierMedecin();
         }
@@ -394,13 +394,13 @@ namespace HopitalDB
             if (dgMedecin.SelectedItem is Medecin MedecinSelectionne)
             {
                 // Vérifie qu'un hôpital est sélectionné dans le ComboBox
-                if (cbHopitalMedecin.SelectedItem != null)
+                if (cbHopitalEditeur.SelectedItem != null)
                 {
                     // Mise à jour des propriétés du médecin sélectionné
                     MedecinSelectionne.Nom = tbNomMed.Text;
-                    MedecinSelectionne.Prenom = tbPrenomMed.Text;
-                    MedecinSelectionne.Telephone = tbTelMed.Text;
-                    MedecinSelectionne.hopital = Hopitaux.FirstOrDefault(h => h.Nom == cbHopitalMedecin.SelectedItem.ToString());
+                    MedecinSelectionne.Prenom = tbPrenomEditeur.Text;
+                    MedecinSelectionne.Telephone = tbTelEditeur.Text;
+                    MedecinSelectionne.hopital = Hopitaux.FirstOrDefault(h => h.Nom == cbHopitalEditeur.SelectedItem.ToString());
 
                     // Rafraîchissement de l'affichage
                     dgMedecin.Items.Refresh();
@@ -421,7 +421,7 @@ namespace HopitalDB
         /// </summary>
         /// <param name="sender">Objet qui a déclenché l'événement</param>
         /// <param name="e">Arguments de l'événement</param>
-        private void btnSupprimerMedecin_Click(object sender, RoutedEventArgs e)
+        private void btnSupprimerEditeur_Click(object sender, RoutedEventArgs e)
         {
             SupprimerMedecin();
         }
@@ -461,9 +461,9 @@ namespace HopitalDB
             if (dgMedecin.SelectedItem is Medecin LigneSelectionnee)
             {
                 tbNomMed.Text = LigneSelectionnee.Nom;
-                tbPrenomMed.Text = LigneSelectionnee.Prenom;
-                tbTelMed.Text = LigneSelectionnee.Telephone;
-                cbHopitalMedecin.SelectedItem = LigneSelectionnee.hopital.Nom;
+                tbPrenomEditeur.Text = LigneSelectionnee.Prenom;
+                tbTelEditeur.Text = LigneSelectionnee.Telephone;
+                cbHopitalEditeur.SelectedItem = LigneSelectionnee.hopital.Nom;
             }
         }
 
@@ -472,7 +472,7 @@ namespace HopitalDB
         /// </summary>
         /// <param name="sender">Objet qui a déclenché l'événement</param>
         /// <param name="e">Arguments de l'événement</param>
-        private void btnAjouterInf_Click(object sender, RoutedEventArgs e)
+        private void btnAjouterLivre_Click(object sender, RoutedEventArgs e)
         {
             AjouterInfirmier();
         }
@@ -484,9 +484,9 @@ namespace HopitalDB
         public void AjouterInfirmier()
         {
             // Vérifie qu'un hôpital est sélectionné dans le ComboBox
-            if (cbHopitalInfirmier.SelectedItem != null)
+            if (cbHopitalLivre.SelectedItem != null)
             {
-                string HopitalNomSelectionne = cbHopitalInfirmier.SelectedItem.ToString();
+                string HopitalNomSelectionne = cbHopitalLivre.SelectedItem.ToString();
 
                 // Recherche l'hôpital sélectionné dans la collection
                 Hopital hopitalExistant = Hopitaux.FirstOrDefault(h => h.Nom == HopitalNomSelectionne);
@@ -501,9 +501,9 @@ namespace HopitalDB
                     // Création d'un nouvel infirmier et ajout à la collection
                     Infirmier NouveauInfirmier = new Infirmier
                     {
-                        Nom = tbNomInf.Text,
-                        Prenom = tbPrenomInf.Text,
-                        Telephone = tbTelInf.Text,
+                        Nom = tbNomLivre.Text,
+                        Prenom = tbPrenomLivre.Text,
+                        Telephone = tbTelLivre.Text,
                         hopital = hopitalExistant
                     };
 
@@ -525,7 +525,7 @@ namespace HopitalDB
         /// </summary>
         /// <param name="sender">Objet qui a déclenché l'événement</param>
         /// <param name="e">Arguments de l'événement</param>
-        private void btnModifierInf_Click(object sender, RoutedEventArgs e)
+        private void btnModifierLivre_Click(object sender, RoutedEventArgs e)
         {
             ModifierInfirmier();
         }
@@ -540,13 +540,13 @@ namespace HopitalDB
             if (dgInfirmier.SelectedItem is Infirmier InfirmierSelectionne)
             {
                 // Vérifie qu'un hôpital est sélectionné dans le ComboBox
-                if (cbHopitalInfirmier.SelectedItem != null)
+                if (cbHopitalLivre.SelectedItem != null)
                 {
                     // Mise à jour des propriétés de l'infirmier sélectionné
-                    InfirmierSelectionne.Nom = tbNomInf.Text;
-                    InfirmierSelectionne.Prenom = tbPrenomInf.Text;
-                    InfirmierSelectionne.Telephone = tbTelInf.Text;
-                    InfirmierSelectionne.hopital = Hopitaux.FirstOrDefault(h => h.Nom == cbHopitalInfirmier.SelectedItem.ToString());
+                    InfirmierSelectionne.Nom = tbNomLivre.Text;
+                    InfirmierSelectionne.Prenom = tbPrenomLivre.Text;
+                    InfirmierSelectionne.Telephone = tbTelLivre.Text;
+                    InfirmierSelectionne.hopital = Hopitaux.FirstOrDefault(h => h.Nom == cbHopitalLivre.SelectedItem.ToString());
 
                     // Rafraîchissement de l'affichage
                     dgInfirmier.Items.Refresh();
@@ -567,7 +567,7 @@ namespace HopitalDB
         /// </summary>
         /// <param name="sender">Objet qui a déclenché l'événement</param>
         /// <param name="e">Arguments de l'événement</param>
-        private void btnSupprimerInf_Click(object sender, RoutedEventArgs e)
+        private void btnSupprimerLivre_Click(object sender, RoutedEventArgs e)
         {
             SupprimerInfirmier();
         }
@@ -606,100 +606,100 @@ namespace HopitalDB
             // Si un infirmier est sélectionné, affiche ses informations dans les TextBox
             if (dgInfirmier.SelectedItem is Infirmier LigneSelectionnee)
             {
-                tbNomInf.Text = LigneSelectionnee.Nom;
-                tbPrenomInf.Text = LigneSelectionnee.Prenom;
-                tbTelInf.Text = LigneSelectionnee.Telephone;
-                cbHopitalInfirmier.SelectedItem = LigneSelectionnee.hopital.Nom;
+                tbNomLivre.Text = LigneSelectionnee.Nom;
+                tbPrenomLivre.Text = LigneSelectionnee.Prenom;
+                tbTelLivre.Text = LigneSelectionnee.Telephone;
+                cbHopitalLivre.SelectedItem = LigneSelectionnee.hopital.Nom;
             }
         }
 
-        private void rbSelectionRechercheParHopital_Checked(object sender, RoutedEventArgs e)
+        private void rbSelectionRechercheParAuteur_Checked(object sender, RoutedEventArgs e)
         {
             AfficherStackPanelRechercheParHopital();
 
         }
 
-        public void  AfficherStackPanelRechercheParHopital()
+        public void AfficherStackPanelRechercheParHopital()
         {
-            spRechercheHopital.Visibility = Visibility.Visible;
-            spRechercheMedecin.Visibility = Visibility.Hidden;
-            spRechercheInfirmier.Visibility = Visibility.Hidden;
+            spRechercheAuteur.Visibility = Visibility.Visible;
+            spRechercheEditeur.Visibility = Visibility.Hidden;
+            spRechercheLivre.Visibility = Visibility.Hidden;
 
-            dgResultatRechercheHopital.Visibility = Visibility.Visible;
-            dgResultatRechercheMedecin.Visibility = Visibility.Collapsed;
-            dgResultatRechercheInfirmier.Visibility= Visibility.Collapsed;
-            
-            
+            dgResultatRechercheAuteur.Visibility = Visibility.Visible;
+            dgResultatRechercheEditeur.Visibility = Visibility.Collapsed;
+            dgResultatRechercheLivre.Visibility = Visibility.Collapsed;
+
+
 
         }
 
-        private void rbSelectionRechercheMedecin_Checked(object sender, RoutedEventArgs e)
+        private void rbSelectionRechercheEditeur_Checked(object sender, RoutedEventArgs e)
         {
             AfficherStackPanelRechercheParMedecin();
         }
 
         public void AfficherStackPanelRechercheParMedecin()
         {
-            spRechercheHopital.Visibility = Visibility.Hidden;
-            spRechercheMedecin.Visibility = Visibility.Visible;
-            spRechercheInfirmier.Visibility = Visibility.Hidden;
+            spRechercheAuteur.Visibility = Visibility.Hidden;
+            spRechercheEditeur.Visibility = Visibility.Visible;
+            spRechercheLivre.Visibility = Visibility.Hidden;
 
-            dgResultatRechercheHopital.Visibility = Visibility.Collapsed;
-            dgResultatRechercheMedecin.Visibility = Visibility.Visible;
-            dgResultatRechercheInfirmier.Visibility = Visibility.Collapsed;
+            dgResultatRechercheAuteur.Visibility = Visibility.Collapsed;
+            dgResultatRechercheEditeur.Visibility = Visibility.Visible;
+            dgResultatRechercheLivre.Visibility = Visibility.Collapsed;
         }
 
-        private void rbSelectionRechercheInfirmier_Checked(object sender, RoutedEventArgs e)
+        private void rbSelectionRechercheLivre_Checked(object sender, RoutedEventArgs e)
         {
             AfficherStackPanelRechercheParInfirmier();
         }
         public void AfficherStackPanelRechercheParInfirmier()
         {
-            spRechercheHopital.Visibility = Visibility.Hidden;
-            spRechercheMedecin.Visibility = Visibility.Hidden;
-            spRechercheInfirmier.Visibility = Visibility.Visible;
+            spRechercheAuteur.Visibility = Visibility.Hidden;
+            spRechercheEditeur.Visibility = Visibility.Hidden;
+            spRechercheLivre.Visibility = Visibility.Visible;
 
-            dgResultatRechercheHopital.Visibility = Visibility.Collapsed;
-            dgResultatRechercheMedecin.Visibility = Visibility.Collapsed;
-            dgResultatRechercheInfirmier.Visibility = Visibility.Visible;
+            dgResultatRechercheAuteur.Visibility = Visibility.Collapsed;
+            dgResultatRechercheEditeur.Visibility = Visibility.Collapsed;
+            dgResultatRechercheLivre.Visibility = Visibility.Visible;
         }
 
-        private void rbRechercheParMedecin_Checked(object sender, RoutedEventArgs e)
+        private void rbRechercheParEditeur_Checked(object sender, RoutedEventArgs e)
         {
-            dgResultatRechercheHopital.Visibility = Visibility.Collapsed;
-            dgResultatRechercheMedecin.Visibility = Visibility.Visible;
-            dgResultatRechercheInfirmier.Visibility = Visibility.Collapsed;
+            dgResultatRechercheAuteur.Visibility = Visibility.Collapsed;
+            dgResultatRechercheEditeur.Visibility = Visibility.Visible;
+            dgResultatRechercheLivre.Visibility = Visibility.Collapsed;
 
         }
 
-        private void rbRechercheParInfirmier_Checked(object sender, RoutedEventArgs e)
+        private void rbRechercheParLivre_Checked(object sender, RoutedEventArgs e)
         {
-            dgResultatRechercheHopital.Visibility = Visibility.Collapsed;
-            dgResultatRechercheMedecin.Visibility = Visibility.Collapsed;
-            dgResultatRechercheInfirmier.Visibility = Visibility.Visible;
+            dgResultatRechercheAuteur.Visibility = Visibility.Collapsed;
+            dgResultatRechercheEditeur.Visibility = Visibility.Collapsed;
+            dgResultatRechercheLivre.Visibility = Visibility.Visible;
         }
 
-        private void cbRechercheParHopital_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void cbRechercheParAuteur_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if(cbRechercheParHopital.SelectedItem != null)
+            if (cbRechercheParAuteur.SelectedItem != null)
             {
-                string NomHopitalSelectionne = cbRechercheParHopital.SelectedItem.ToString();
+                string NomHopitalSelectionne = cbRechercheParAuteur.SelectedItem.ToString();
 
                 Hopital HopitalChoisis = Hopitaux.FirstOrDefault(h => h.Nom == NomHopitalSelectionne);
 
-                if(HopitalChoisis != null)
+                if (HopitalChoisis != null)
                 {
-                    if(rbRechercheParMedecin.IsChecked == true)
+                    if (rbRechercheParEditeur.IsChecked == true)
                     {
-                        var MedecinsFiltreSelonHopital = 
+                        var MedecinsFiltreSelonHopital =
                         new ObservableCollection<Medecin>(Medecins.Where(m => m.hopital.Nom == HopitalChoisis.Nom));
-                        dgResultatRechercheMedecin.ItemsSource = MedecinsFiltreSelonHopital;
+                        dgResultatRechercheEditeur.ItemsSource = MedecinsFiltreSelonHopital;
                     }
-                    else if(rbRechercheParInfirmier.IsChecked==true)
+                    else if (rbRechercheParLivre.IsChecked == true)
                     {
                         var InfirmiersFiltreSelonHopital =
                         new ObservableCollection<Infirmier>(Infirmiers.Where(i => i.hopital.Nom == HopitalChoisis.Nom));
-                        dgResultatRechercheInfirmier.ItemsSource = InfirmiersFiltreSelonHopital;
+                        dgResultatRechercheLivre.ItemsSource = InfirmiersFiltreSelonHopital;
                     }
                 }
 
@@ -707,20 +707,20 @@ namespace HopitalDB
 
         }
 
-        private void tbRechercheParMedecin_TextChanged(object sender, TextChangedEventArgs e)
+        private void tbRechercheParEditeur_TextChanged(object sender, TextChangedEventArgs e)
         {
-            string NomMedecinFiltrer = tbRechercheParMedecin.Text;
+            string NomMedecinFiltrer = tbRechercheParEditeur.Text;
             ObservableCollection<Medecin> MedecinFiltre = new ObservableCollection<Medecin>
                 (Medecins.Where(m => m.Nom.ToLower().Contains(NomMedecinFiltrer.ToLower()) || m.Prenom.ToLower().Contains(NomMedecinFiltrer.ToLower())));
-            dgResultatRechercheMedecin.ItemsSource = MedecinFiltre;
+            dgResultatRechercheEditeur.ItemsSource = MedecinFiltre;
         }
 
-        private void tbRechercheParInfirmier_TextChanged(object sender, TextChangedEventArgs e)
+        private void tbRechercheParLivre_TextChanged(object sender, TextChangedEventArgs e)
         {
-            string NomInfirmierFiltrer = tbRechercheParInfirmier.Text;
+            string NomInfirmierFiltrer = tbRechercheParLivre.Text;
             ObservableCollection<Infirmier> InfirmierFiltre = new ObservableCollection<Infirmier>
                 (Infirmiers.Where(i => i.Nom.ToLower().Contains(NomInfirmierFiltrer.ToLower()) || i.Prenom.ToLower().Contains(NomInfirmierFiltrer.ToLower())));
-            dgResultatRechercheInfirmier.ItemsSource = InfirmierFiltre;
+            dgResultatRechercheLivre.ItemsSource = InfirmierFiltre;
         }
     }
 }
