@@ -1,0 +1,72 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\israe\\Downloads\\HopitalDB Visibilit\u00E9 Recherche\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3DDD367B-3EC7-4823-BDF3-01350435D388}|HopitalDB\\HopitalDB.csproj|c:\\users\\israe\\downloads\\hopitaldb visibilit\u00E9 recherche\\hopitaldb\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3DDD367B-3EC7-4823-BDF3-01350435D388}|HopitalDB\\HopitalDB.csproj|solutionrelative:hopitaldb\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DDD367B-3EC7-4823-BDF3-01350435D388}|HopitalDB\\HopitalDB.csproj|c:\\users\\israe\\downloads\\hopitaldb visibilit\u00E9 recherche\\hopitaldb\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DDD367B-3EC7-4823-BDF3-01350435D388}|HopitalDB\\HopitalDB.csproj|solutionrelative:hopitaldb\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1418685207:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\israe\\Downloads\\HopitalDB Visibilit\u00E9 Recherche\\HopitalDB\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "HopitalDB\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\israe\\Downloads\\HopitalDB Visibilit\u00E9 Recherche\\HopitalDB\\MainWindow.xaml",
+              "RelativeToolTip": "HopitalDB\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-20T19:33:08.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\israe\\Downloads\\HopitalDB Visibilit\u00E9 Recherche\\HopitalDB\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "HopitalDB\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\israe\\Downloads\\HopitalDB Visibilit\u00E9 Recherche\\HopitalDB\\MainWindow.xaml.cs",
+              "RelativeToolTip": "HopitalDB\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAYwHgAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T19:27:29.781Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,428 @@
+﻿<Application x:Class="HopitalDB.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:HopitalDB"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+
+        <Style TargetType="DataGrid">
+            <Setter Property="AutoGenerateColumns" Value="False"/>
+            <Setter Property="HorizontalScrollBarVisibility" Value="Visible"/>
+            <Setter Property="VerticalScrollBarVisibility" Value="Visible"/>
+            <Setter Property="MaxHeight" Value="200"/>
+        </Style>
+        
+        <!-- Style pour ListView -->
+        <Style x:Key="CustomListViewStyle" TargetType="ListView">
+            <Setter Property="Background" Value="#FF1D1D1D"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="#FF444444"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto"/>
+            <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto"/>
+        </Style>
+
+        <!-- Style pour ListViewItem -->
+        <Style x:Key="CustomListViewItemStyle" TargetType="ListViewItem">
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="Margin" Value="0,5"/>
+            <Setter Property="Background" Value="#FF2C2C2C"/>
+            <Setter Property="BorderBrush" Value="#FF444444"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Style.Triggers>
+                <!-- Effet de survol pour ListViewItem -->
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FF4CAF50"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </Trigger>
+                <!-- Effet sélectionné pour ListViewItem -->
+                <Trigger Property="IsSelected" Value="True">
+                    <Setter Property="Background" Value="#FF388E3C"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Style pour TextBlock à l'intérieur de ListViewItem -->
+        <Style x:Key="CustomTextStyleListView" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+
+        <!-- Style du bouton -->
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="DarkOrange"/>
+            <Setter Property="Foreground" Value="Black" />
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="2"/>
+            <Setter Property="BorderBrush" Value="YellowGreen"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="MinHeight" Value="30"/>
+            <Setter Property="Width" Value="120"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Opacity="1" BlurRadius="10"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Dégradé de fond de la fenêtre -->
+        <LinearGradientBrush x:Key="WindowBackgroundBrush" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#FF4B6E6B" Offset="0" />
+            <GradientStop Color="#FFB2D8D8" Offset="1" />
+        </LinearGradientBrush>
+
+        <!-- Style pour la bordure de la fenêtre -->
+        <Style TargetType="Window">
+            <Setter Property="Background" Value="{StaticResource WindowBackgroundBrush}" />
+            <Setter Property="BorderBrush" Value="#FF3A5A5A" />
+            <Setter Property="BorderThickness" Value="2" />
+            <Setter Property="WindowStyle" Value="SingleBorderWindow" />
+            <Setter Property="AllowsTransparency" Value="True" />
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="Black" BlurRadius="10" Direction="270" ShadowDepth="5"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Style pour le ComboBox -->
+        <Style TargetType="ComboBox">
+            <Setter Property="Background" Value="#FF2D2D30"/>
+            <Setter Property="Foreground" Value="Orange"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Padding" Value="6,3"/>
+            <Setter Property="BorderBrush" Value="#FF888888"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="Margin" Value="4"/>
+            <Setter Property="MinHeight" Value="30"/>
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Opacity="1" BlurRadius="10"/>
+                </Setter.Value>
+            </Setter>
+
+            <!-- Ajouter CornerRadius au ComboBox -->
+
+        </Style>
+
+        <!-- Style pour les éléments de ComboBox -->
+        <Style TargetType="ComboBoxItem">
+            <Setter Property="Background" Value="#FF2D2D30"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Padding" Value="6,3"/>
+            <Setter Property="BorderBrush" Value="#FF888888"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="Margin" Value="2"/>
+            <Setter Property="MinHeight" Value="30"/>
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Opacity="1" BlurRadius="10"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Style pour les Labels -->
+        <Style TargetType="Label">
+            <Setter Property="Background" Value="Black"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Margin" Value="0,5,0,0"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Width" Value="80"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Margin" Value="4"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="BorderBrush" Value="Orange"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Opacity="0.5" BlurRadius="5"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Style pour TextBox -->
+        <Style TargetType="TextBox">
+            <Setter Property="Background" Value="Black"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Margin" Value="0,5,0,0"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Margin" Value="4"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="2"/>
+            <Setter Property="BorderBrush" Value="Orange"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Opacity="0.5" BlurRadius="5"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Style pour le RadioButton -->
+        <Style  TargetType="RadioButton">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RadioButton">
+                        <StackPanel Orientation="Horizontal">
+                            <Ellipse x:Name="ellipse" Width="20" Height="20"
+                     Stroke="Gray" StrokeThickness="2"
+                     VerticalAlignment="Center" Margin="10">
+                                <Ellipse.Fill>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                        <GradientStop Color="White" Offset="0.0"/>
+                                        <GradientStop Color="LightGray" Offset="1.0"/>
+                                    </LinearGradientBrush>
+                                </Ellipse.Fill>
+                                <Ellipse.OpacityMask>
+                                    <!-- Utiliser DrawingBrush au lieu d'EllipseGeometry -->
+                                    <DrawingBrush>
+                                        <DrawingBrush.Drawing>
+                                            <GeometryDrawing Brush="Black" Geometry="M 10,1 A 9,9 0 1,1 9.99,1 Z"/>
+                                        </DrawingBrush.Drawing>
+                                    </DrawingBrush>
+                                </Ellipse.OpacityMask>
+                            </Ellipse>
+
+                            <!-- ContentPresenter pour le texte -->
+                            <ContentPresenter x:Name="contentPresenter" Margin="5,0,0,0"
+                              VerticalAlignment="Center"
+                              RecognizesAccessKey="True">
+                                <ContentPresenter.Style>
+                                    <Style TargetType="ContentPresenter">
+                                        <Setter Property="TextBlock.FontSize" Value="16"/>
+                                        <Setter Property="TextBlock.Foreground" Value="Orange"/>
+                                        <Setter Property="TextBlock.FontWeight" Value="Bold"/>
+                                        <Setter Property="TextBlock.TextDecorations" Value="None"/>
+                                    </Style>
+                                </ContentPresenter.Style>
+                            </ContentPresenter>
+                        </StackPanel>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="ellipse" Property="Fill">
+                                    <Setter.Value>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                            <GradientStop Color="White" Offset="0.0"/>
+                                            <GradientStop Color="DodgerBlue" Offset="1.0"/>
+                                        </LinearGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                                <!-- Changer la couleur du texte lorsque sélectionné -->
+                                <Setter TargetName="contentPresenter" Property="TextBlock.Foreground" Value="DodgerBlue"/>
+                            </Trigger>
+
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="ellipse" Property="Stroke" Value="DodgerBlue"/>
+                                <!-- Changer la couleur du texte au survol -->
+                                <Setter TargetName="contentPresenter" Property="TextBlock.Foreground" Value="DarkBlue"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Style pour le Menu -->
+        <Style  TargetType="MenuItem">
+            <Setter Property="Foreground" Value="Yellow"/>
+            <Setter Property="Background" Value="Gray"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Style.Triggers>
+                <!-- Effet de survol -->
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FF3E8E41"/>
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="BorderBrush" Value="#FF3E8E41"/>
+                </Trigger>
+                <!-- Effet lors de l'activation -->
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#FF2E6A31"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Style du menu principal -->
+        <Style  TargetType="Menu">
+            <Setter Property="Background" Value="#FF333333"/>
+            <Setter Property="Foreground" Value="Yellow"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        </Style>
+
+        <!-- Style pour les DockPanels -->
+        <Style  TargetType="Border">
+            <Setter Property="Background" Value="#FF444444"/>
+            <Setter Property="Padding" Value="15,10"/>
+            <Setter Property="Margin" Value="0,0,0,5"/>
+            <Setter Property="CornerRadius" Value="5"/>
+            <Setter Property="BorderBrush" Value="#FF333333"/>
+            <Setter Property="BorderThickness" Value="0,0,0,2"/>
+        </Style>
+
+        <!-- Style pour les ToolBars -->
+        <Style  TargetType="ToolBar">
+            <Setter Property="Background" Value="#FF333333"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Padding" Value="5,0"/>
+        </Style>
+
+        <!-- Style pour le ToolBar Button -->
+        <Style x:Key="ToolBarButtonStyle" TargetType="Button">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Style.Triggers>
+                <!-- Effet de survol -->
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FF4CAF50"/>
+                    <Setter Property="BorderBrush" Value="#FF4CAF50"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </Trigger>
+                <!-- Effet lors de l'appui -->
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#FF388E3C"/>
+                    <Setter Property="BorderBrush" Value="#FF388E3C"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Style pour la barre de statut -->
+        <Style x:Key="StatusBarStyle" TargetType="StatusBar">
+            <Setter Property="Background" Value="#2D2D30" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+
+        <!-- Style pour les éléments de la barre de statut -->
+        <Style x:Key="StatusBarItemStyle" TargetType="StatusBarItem">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="10,0"/>
+        </Style>
+
+        <!-- Style pour le texte de la barre de statut -->
+        <Style x:Key="StatusBarTextStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="10"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+
+        <!-- Style pour TabControl -->
+        <Style x:Key="CustomTabControlStyle" TargetType="TabControl">
+            <Setter Property="Background" Value="#FF1D1D1D"/>
+            <!--<Setter Property="Foreground" Value="White"/>-->
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="BorderBrush" Value="#FF444444"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <!--<Setter Property="ItemContainerStyle" Value="{StaticResource CustomTabItemStyle}"/>-->
+        </Style>
+
+        <!-- Style pour TabItem -->
+        <Style x:Key="CustomTabItemStyle" TargetType="TabItem">
+            <Setter Property="Background" Value="#FF333333"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Padding" Value="2,2"/>
+            <Setter Property="Margin" Value="0,0,0,5"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Width" Value="120"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Style.Triggers>
+                <!-- Effet de survol -->
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FF4CAF50"/>
+                    <Setter Property="Foreground" Value="Orange"/>
+                </Trigger>
+                <!-- Onglet actif -->
+                <Trigger Property="IsSelected" Value="True">
+                    <Setter Property="Background" Value="#FF388E3C"/>
+                    <Setter Property="Foreground" Value="Orange"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Style pour le contenu de TabItem -->
+        <Style x:Key="TabItemContentStyle" TargetType="ContentPresenter">
+            <Setter Property="Margin" Value="2"/>
+            <Setter Property="Width" Value="100"/>
+            <!--<Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>-->
+        </Style>
+
+        <Style x:Key="CustomCheckBoxStyle" TargetType="CheckBox">
+            <Setter Property="Foreground" Value="Orange"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Width" Value="150"/>
+            <Setter Property="Height" Value="20"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="CheckBox">
+                        <BulletDecorator Background="Transparent">
+                            <BulletDecorator.Bullet>
+                                <Border x:Name="Border" Width="16" Height="16" Background="LightGray" BorderBrush="Gray" BorderThickness="1" CornerRadius="3">
+                                    <Grid x:Name="CheckMarkGrid" Visibility="Collapsed">
+                                        <Path x:Name="CheckMark" Data="M 0 5 L 4 9 L 12 1" Stroke="White" StrokeThickness="2" />
+                                    </Grid>
+                                </Border>
+                            </BulletDecorator.Bullet>
+                            <ContentPresenter VerticalAlignment="Center" Margin="2,0,0,0"/>
+                        </BulletDecorator>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="CheckMarkGrid" Property="Visibility" Value="Visible"/>
+                                <Setter TargetName="Border" Property="Background" Value="MediumSeaGreen"/>
+                                <Setter TargetName="Border" Property="BorderBrush" Value="DarkGreen"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="LightBlue"/>
+                                <Setter TargetName="Border" Property="BorderBrush" Value="DarkBlue"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter TargetName="Border" Property="Background" Value="LightGray"/>
+                                <Setter TargetName="Border" Property="BorderBrush" Value="Gray"/>
+                                <Setter TargetName="CheckMark" Property="Stroke" Value="DarkGray"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Application.Resources>
+</Application>

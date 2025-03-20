@@ -1,0 +1,104 @@
+C:\aspnetcore\HopitalDB\HopitalDB\bin\Debug\net8.0-windows\HopitalDB.exe
+C:\aspnetcore\HopitalDB\HopitalDB\bin\Debug\net8.0-windows\HopitalDB.deps.json
+C:\aspnetcore\HopitalDB\HopitalDB\bin\Debug\net8.0-windows\HopitalDB.runtimeconfig.json
+C:\aspnetcore\HopitalDB\HopitalDB\bin\Debug\net8.0-windows\HopitalDB.dll
+C:\aspnetcore\HopitalDB\HopitalDB\bin\Debug\net8.0-windows\HopitalDB.pdb
+C:\aspnetcore\HopitalDB\HopitalDB\bin\Debug\net8.0-windows\fr-FR\HopitalDB.resources.dll
+C:\aspnetcore\HopitalDB\HopitalDB\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\aspnetcore\HopitalDB\HopitalDB\obj\Debug\net8.0-windows\App.g.cs
+C:\aspnetcore\HopitalDB\HopitalDB\obj\Debug\net8.0-windows\HopitalDB_MarkupCompile.cache
+C:\aspnetcore\HopitalDB\HopitalDB\obj\Debug\net8.0-windows\HopitalDB_MarkupCompile.lref
+C:\aspnetcore\HopitalDB\HopitalDB\obj\Debug\net8.0-windows\App.baml
+C:\aspnetcore\HopitalDB\HopitalDB\obj\Debug\net8.0-windows\MainWindow.baml
+C:\aspnetcore\HopitalDB\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.g.resources
+C:\aspnetcore\HopitalDB\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.Properties.Resources.resources
+C:\aspnetcore\HopitalDB\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.Properties.Resources.fr-FR.resources
+C:\aspnetcore\HopitalDB\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.csproj.GenerateResource.cache
+C:\aspnetcore\HopitalDB\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.GeneratedMSBuildEditorConfig.editorconfig
+C:\aspnetcore\HopitalDB\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.AssemblyInfoInputs.cache
+C:\aspnetcore\HopitalDB\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.AssemblyInfo.cs
+C:\aspnetcore\HopitalDB\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.csproj.CoreCompileInputs.cache
+C:\aspnetcore\HopitalDB\HopitalDB\obj\Debug\net8.0-windows\fr-FR\HopitalDB.resources.dll
+C:\aspnetcore\HopitalDB\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.dll
+C:\aspnetcore\HopitalDB\HopitalDB\obj\Debug\net8.0-windows\refint\HopitalDB.dll
+C:\aspnetcore\HopitalDB\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.pdb
+C:\aspnetcore\HopitalDB\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.genruntimeconfig.cache
+C:\aspnetcore\HopitalDB\HopitalDB\obj\Debug\net8.0-windows\ref\HopitalDB.dll
+C:\aspnetcore\HopitalDB - CRUD\HopitalDB\bin\Debug\net8.0-windows\HopitalDB.exe
+C:\aspnetcore\HopitalDB - CRUD\HopitalDB\bin\Debug\net8.0-windows\HopitalDB.deps.json
+C:\aspnetcore\HopitalDB - CRUD\HopitalDB\bin\Debug\net8.0-windows\HopitalDB.runtimeconfig.json
+C:\aspnetcore\HopitalDB - CRUD\HopitalDB\bin\Debug\net8.0-windows\HopitalDB.dll
+C:\aspnetcore\HopitalDB - CRUD\HopitalDB\bin\Debug\net8.0-windows\HopitalDB.pdb
+C:\aspnetcore\HopitalDB - CRUD\HopitalDB\bin\Debug\net8.0-windows\fr-FR\HopitalDB.resources.dll
+C:\aspnetcore\HopitalDB - CRUD\HopitalDB\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\aspnetcore\HopitalDB - CRUD\HopitalDB\obj\Debug\net8.0-windows\App.g.cs
+C:\aspnetcore\HopitalDB - CRUD\HopitalDB\obj\Debug\net8.0-windows\HopitalDB_MarkupCompile.cache
+C:\aspnetcore\HopitalDB - CRUD\HopitalDB\obj\Debug\net8.0-windows\HopitalDB_MarkupCompile.lref
+C:\aspnetcore\HopitalDB - CRUD\HopitalDB\obj\Debug\net8.0-windows\App.baml
+C:\aspnetcore\HopitalDB - CRUD\HopitalDB\obj\Debug\net8.0-windows\MainWindow.baml
+C:\aspnetcore\HopitalDB - CRUD\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.g.resources
+C:\aspnetcore\HopitalDB - CRUD\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.Properties.Resources.resources
+C:\aspnetcore\HopitalDB - CRUD\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.Properties.Resources.fr-FR.resources
+C:\aspnetcore\HopitalDB - CRUD\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.csproj.GenerateResource.cache
+C:\aspnetcore\HopitalDB - CRUD\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.GeneratedMSBuildEditorConfig.editorconfig
+C:\aspnetcore\HopitalDB - CRUD\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.AssemblyInfoInputs.cache
+C:\aspnetcore\HopitalDB - CRUD\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.AssemblyInfo.cs
+C:\aspnetcore\HopitalDB - CRUD\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.csproj.CoreCompileInputs.cache
+C:\aspnetcore\HopitalDB - CRUD\HopitalDB\obj\Debug\net8.0-windows\fr-FR\HopitalDB.resources.dll
+C:\aspnetcore\HopitalDB - CRUD\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.dll
+C:\aspnetcore\HopitalDB - CRUD\HopitalDB\obj\Debug\net8.0-windows\refint\HopitalDB.dll
+C:\aspnetcore\HopitalDB - CRUD\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.pdb
+C:\aspnetcore\HopitalDB - CRUD\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.genruntimeconfig.cache
+C:\aspnetcore\HopitalDB - CRUD\HopitalDB\obj\Debug\net8.0-windows\ref\HopitalDB.dll
+C:\aspnetcore\HopitalDB - Consulter BDD\HopitalDB\bin\Debug\net8.0-windows\HopitalDB.exe
+C:\aspnetcore\HopitalDB - Consulter BDD\HopitalDB\bin\Debug\net8.0-windows\HopitalDB.deps.json
+C:\aspnetcore\HopitalDB - Consulter BDD\HopitalDB\bin\Debug\net8.0-windows\HopitalDB.runtimeconfig.json
+C:\aspnetcore\HopitalDB - Consulter BDD\HopitalDB\bin\Debug\net8.0-windows\HopitalDB.dll
+C:\aspnetcore\HopitalDB - Consulter BDD\HopitalDB\bin\Debug\net8.0-windows\HopitalDB.pdb
+C:\aspnetcore\HopitalDB - Consulter BDD\HopitalDB\bin\Debug\net8.0-windows\fr-FR\HopitalDB.resources.dll
+C:\aspnetcore\HopitalDB - Consulter BDD\HopitalDB\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\aspnetcore\HopitalDB - Consulter BDD\HopitalDB\obj\Debug\net8.0-windows\App.g.cs
+C:\aspnetcore\HopitalDB - Consulter BDD\HopitalDB\obj\Debug\net8.0-windows\HopitalDB_MarkupCompile.cache
+C:\aspnetcore\HopitalDB - Consulter BDD\HopitalDB\obj\Debug\net8.0-windows\HopitalDB_MarkupCompile.lref
+C:\aspnetcore\HopitalDB - Consulter BDD\HopitalDB\obj\Debug\net8.0-windows\App.baml
+C:\aspnetcore\HopitalDB - Consulter BDD\HopitalDB\obj\Debug\net8.0-windows\MainWindow.baml
+C:\aspnetcore\HopitalDB - Consulter BDD\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.g.resources
+C:\aspnetcore\HopitalDB - Consulter BDD\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.Properties.Resources.resources
+C:\aspnetcore\HopitalDB - Consulter BDD\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.Properties.Resources.fr-FR.resources
+C:\aspnetcore\HopitalDB - Consulter BDD\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.csproj.GenerateResource.cache
+C:\aspnetcore\HopitalDB - Consulter BDD\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.GeneratedMSBuildEditorConfig.editorconfig
+C:\aspnetcore\HopitalDB - Consulter BDD\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.AssemblyInfoInputs.cache
+C:\aspnetcore\HopitalDB - Consulter BDD\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.AssemblyInfo.cs
+C:\aspnetcore\HopitalDB - Consulter BDD\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.csproj.CoreCompileInputs.cache
+C:\aspnetcore\HopitalDB - Consulter BDD\HopitalDB\obj\Debug\net8.0-windows\fr-FR\HopitalDB.resources.dll
+C:\aspnetcore\HopitalDB - Consulter BDD\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.dll
+C:\aspnetcore\HopitalDB - Consulter BDD\HopitalDB\obj\Debug\net8.0-windows\refint\HopitalDB.dll
+C:\aspnetcore\HopitalDB - Consulter BDD\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.pdb
+C:\aspnetcore\HopitalDB - Consulter BDD\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.genruntimeconfig.cache
+C:\aspnetcore\HopitalDB - Consulter BDD\HopitalDB\obj\Debug\net8.0-windows\ref\HopitalDB.dll
+C:\Users\israe\Downloads\HopitalDB Visibilité Recherche\HopitalDB\bin\Debug\net8.0-windows\HopitalDB.exe
+C:\Users\israe\Downloads\HopitalDB Visibilité Recherche\HopitalDB\bin\Debug\net8.0-windows\HopitalDB.deps.json
+C:\Users\israe\Downloads\HopitalDB Visibilité Recherche\HopitalDB\bin\Debug\net8.0-windows\HopitalDB.runtimeconfig.json
+C:\Users\israe\Downloads\HopitalDB Visibilité Recherche\HopitalDB\bin\Debug\net8.0-windows\HopitalDB.dll
+C:\Users\israe\Downloads\HopitalDB Visibilité Recherche\HopitalDB\bin\Debug\net8.0-windows\HopitalDB.pdb
+C:\Users\israe\Downloads\HopitalDB Visibilité Recherche\HopitalDB\bin\Debug\net8.0-windows\fr-FR\HopitalDB.resources.dll
+C:\Users\israe\Downloads\HopitalDB Visibilité Recherche\HopitalDB\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\israe\Downloads\HopitalDB Visibilité Recherche\HopitalDB\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\israe\Downloads\HopitalDB Visibilité Recherche\HopitalDB\obj\Debug\net8.0-windows\HopitalDB_MarkupCompile.cache
+C:\Users\israe\Downloads\HopitalDB Visibilité Recherche\HopitalDB\obj\Debug\net8.0-windows\HopitalDB_MarkupCompile.lref
+C:\Users\israe\Downloads\HopitalDB Visibilité Recherche\HopitalDB\obj\Debug\net8.0-windows\App.baml
+C:\Users\israe\Downloads\HopitalDB Visibilité Recherche\HopitalDB\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\israe\Downloads\HopitalDB Visibilité Recherche\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.g.resources
+C:\Users\israe\Downloads\HopitalDB Visibilité Recherche\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.Properties.Resources.resources
+C:\Users\israe\Downloads\HopitalDB Visibilité Recherche\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.Properties.Resources.fr-FR.resources
+C:\Users\israe\Downloads\HopitalDB Visibilité Recherche\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.csproj.GenerateResource.cache
+C:\Users\israe\Downloads\HopitalDB Visibilité Recherche\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\israe\Downloads\HopitalDB Visibilité Recherche\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.AssemblyInfoInputs.cache
+C:\Users\israe\Downloads\HopitalDB Visibilité Recherche\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.AssemblyInfo.cs
+C:\Users\israe\Downloads\HopitalDB Visibilité Recherche\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.csproj.CoreCompileInputs.cache
+C:\Users\israe\Downloads\HopitalDB Visibilité Recherche\HopitalDB\obj\Debug\net8.0-windows\fr-FR\HopitalDB.resources.dll
+C:\Users\israe\Downloads\HopitalDB Visibilité Recherche\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.dll
+C:\Users\israe\Downloads\HopitalDB Visibilité Recherche\HopitalDB\obj\Debug\net8.0-windows\refint\HopitalDB.dll
+C:\Users\israe\Downloads\HopitalDB Visibilité Recherche\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.pdb
+C:\Users\israe\Downloads\HopitalDB Visibilité Recherche\HopitalDB\obj\Debug\net8.0-windows\HopitalDB.genruntimeconfig.cache
+C:\Users\israe\Downloads\HopitalDB Visibilité Recherche\HopitalDB\obj\Debug\net8.0-windows\ref\HopitalDB.dll
