@@ -117,103 +117,166 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-	<data name="Add" xml:space="preserve">
-  <value>Ajouter</value>
-</data>
-	<data name="Address" xml:space="preserve">
-  <value>Adresse</value>
-</data>
-	<data name="Close" xml:space="preserve">
-  <value>Fermer</value>
-</data>
-	<data name="Decrease" xml:space="preserve">
-  <value>Réduire -</value>
-</data>
-	<data name="Delete" xml:space="preserve">
-  <value>Supprimer</value>
-</data>
-	<data name="DeleteDoctor" xml:space="preserve">
-  <value>Médecin retiré from the hospital</value>
-</data>
-	<data name="DeleteHospital" xml:space="preserve">
-  <value>Hôpital supprimé</value>
-</data>
-	<data name="DeleteNurse" xml:space="preserve">
-  <value>Infirmier retiré de  l'hôpital</value>
-</data>
-	<data name="Doctor" xml:space="preserve">
-  <value>Médecin</value>
-</data>
-	<data name="FirstName" xml:space="preserve">
-  <value>Prénom</value>
-</data>
-	<data name="Hospital" xml:space="preserve">
-  <value>Hôpital</value>
-</data>
-	<data name="Increase" xml:space="preserve">
-  <value>Agrandir +</value>
-</data>
-	<data name="InsertDoctor" xml:space="preserve">
-  <value>Un nouveau médecin ajouté</value>
-</data>
-	<data name="InsertNurse" xml:space="preserve">
-  <value>Un nouveau infirmier ajouté</value>
-</data>
-	<data name="InstertHospital" xml:space="preserve">
-  <value>Un nouveau Hôpital ajouté</value>
-</data>
-	<data name="LastName" xml:space="preserve">
-  <value>Nom</value>
-</data>
-	<data name="Name" xml:space="preserve">
-  <value>Nom</value>
-</data>
-	<data name="NotDeletedDoctor" xml:space="preserve">
-  <value>Le médecin ne peut pas être retiré de l'hôpital</value>
-</data>
-	<data name="NotDeletedHospital" xml:space="preserve">
-  <value> L'hôpital ne peut pas être retiré</value>
-</data>
-	<data name="NotDeletedNurse" xml:space="preserve">
-  <value> L'infirmier ne peut pas être retiré de l'hôpital</value>
-</data>
-	<data name="NotInsertedDoctor" xml:space="preserve">
-  <value>Ne peut pas ajouter le nouveau médecin</value>
-</data>
-	<data name="NotInsertedHospital" xml:space="preserve">
-  <value>Ne peut pas ajouter le nouveau hôpital</value>
-</data>
-	<data name="NotInsertedNurse" xml:space="preserve">
-  <value>Ne peut pas ajouter le nouveau infirmier</value>
-</data>
-	<data name="NotUpdaedDoctor" xml:space="preserve">
-  <value>Ne peut pas modifier les informations du médecin</value>
-</data>
-	<data name="NotUpdatedHospital" xml:space="preserve">
-  <value>Ne peut pas modifier les informations de l'hôpital</value>
-</data>
-	<data name="NotUpdatedNurse" xml:space="preserve">
-  <value>Ne peut pas modifier les informations de l'infirmier</value>
-</data>
-	<data name="Nurse" xml:space="preserve">
-  <value>Infirmier</value>
-</data>
-	<data name="Phone" xml:space="preserve">
-  <value>Tel</value>
-</data>
-	<data name="Title" xml:space="preserve">
-  <value>Base de données des hôpitaux</value>
-</data>
-	<data name="Update" xml:space="preserve">
-  <value>Modifier</value>
-</data>
-	<data name="UpdateDoctor" xml:space="preserve">
-  <value>Informations du médecin modifiées</value>
-</data>
-	<data name="UpdateHospital" xml:space="preserve">
-  <value>Informations de l'hôpital modifiées</value>
-</data>
-	<data name="UpdateNurse" xml:space="preserve">
-  <value>Informations de l'infirmier modifiées</value>
-</data>
+  <data name="Add" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Adresse</value>
+  </data>
+  <data name="Author" xml:space="preserve">
+    <value>Auteur</value>
+  </data>
+  <data name="Book" xml:space="preserve">
+    <value>Livre</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
+  <data name="Decrease" xml:space="preserve">
+    <value>Réduire -</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="DeleteAuthor" xml:space="preserve">
+    <value>Auteur retiré</value>
+  </data>
+  <data name="DeleteBook" xml:space="preserve">
+    <value>Livre retiré</value>
+  </data>
+  <data name="DeleteDoctor" xml:space="preserve">
+    <value>Médecin retiré from the hospital</value>
+  </data>
+  <data name="DeleteEditor" xml:space="preserve">
+    <value>Éditeur retiré</value>
+  </data>
+  <data name="DeleteHospital" xml:space="preserve">
+    <value>Hôpital supprimé</value>
+  </data>
+  <data name="DeleteNurse" xml:space="preserve">
+    <value>Infirmier retiré de  l'hôpital</value>
+  </data>
+  <data name="Doctor" xml:space="preserve">
+    <value>Médecin</value>
+  </data>
+  <data name="Editor" xml:space="preserve">
+    <value>Éditeur</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>Prénom</value>
+  </data>
+  <data name="Hospital" xml:space="preserve">
+    <value>Hôpital</value>
+  </data>
+  <data name="Increase" xml:space="preserve">
+    <value>Agrandir +</value>
+  </data>
+  <data name="InsertAuthor" xml:space="preserve">
+    <value>Un nouvel auteur ajouté</value>
+  </data>
+  <data name="InsertBook" xml:space="preserve">
+    <value>Un nouveau livre ajouté</value>
+  </data>
+  <data name="InsertDoctor" xml:space="preserve">
+    <value>Un nouveau médecin ajouté</value>
+  </data>
+  <data name="InsertEditor" xml:space="preserve">
+    <value>Un nouvel éditeur ajouté</value>
+  </data>
+  <data name="InsertNurse" xml:space="preserve">
+    <value>Un nouveau infirmier ajouté</value>
+  </data>
+  <data name="InstertHospital" xml:space="preserve">
+    <value>Un nouveau Hôpital ajouté</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="NotDeletedAuthor" xml:space="preserve">
+    <value>L'auteur ne peut pas être retiré tant qu'il a au moins un livre associé</value>
+  </data>
+  <data name="NotDeletedBook" xml:space="preserve">
+    <value>Le livre ne peut pas être retiré</value>
+  </data>
+  <data name="NotDeletedDoctor" xml:space="preserve">
+    <value>Le médecin ne peut pas être retiré de l'hôpital</value>
+  </data>
+  <data name="NotDeletedEditor" xml:space="preserve">
+    <value>L'éditeur ne peut pas être retiré tant qu'il a au moins un livre associé</value>
+  </data>
+  <data name="NotDeletedHospital" xml:space="preserve">
+    <value> L'hôpital ne peut pas être retiré</value>
+  </data>
+  <data name="NotDeletedNurse" xml:space="preserve">
+    <value> L'infirmier ne peut pas être retiré de l'hôpital</value>
+  </data>
+  <data name="NotInsertedAuthor" xml:space="preserve">
+    <value>Ne peut pas ajouter le nouvel auteur</value>
+  </data>
+  <data name="NotInsertedBook" xml:space="preserve">
+    <value>Ne peut pas ajouter le nouveau livre</value>
+  </data>
+  <data name="NotInsertedDoctor" xml:space="preserve">
+    <value>Ne peut pas ajouter le nouveau médecin</value>
+  </data>
+  <data name="NotInsertedEditor" xml:space="preserve">
+    <value>Ne peut pas ajouter le nouvel éditeur</value>
+  </data>
+  <data name="NotInsertedHospital" xml:space="preserve">
+    <value>Ne peut pas ajouter le nouveau hôpital</value>
+  </data>
+  <data name="NotInsertedNurse" xml:space="preserve">
+    <value>Ne peut pas ajouter le nouveau infirmier</value>
+  </data>
+  <data name="NotUpdaedDoctor" xml:space="preserve">
+    <value>Ne peut pas modifier les informations du médecin</value>
+  </data>
+  <data name="NotUpdatedAuthor" xml:space="preserve">
+    <value>Ne peut pas modifier les informations de l'auteur</value>
+  </data>
+  <data name="NotUpdatedBook" xml:space="preserve">
+    <value>Ne peut pas modifier les informations du livre</value>
+  </data>
+  <data name="NotUpdatedEditor" xml:space="preserve">
+    <value>Ne peut pas modifier les informations de l'éditeur</value>
+  </data>
+  <data name="NotUpdatedHospital" xml:space="preserve">
+    <value>Ne peut pas modifier les informations de l'hôpital</value>
+  </data>
+  <data name="NotUpdatedNurse" xml:space="preserve">
+    <value>Ne peut pas modifier les informations de l'infirmier</value>
+  </data>
+  <data name="Nurse" xml:space="preserve">
+    <value>Infirmier</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Tel</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Base de données des hôpitaux</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Modifier</value>
+  </data>
+  <data name="UpdateAuthor" xml:space="preserve">
+    <value>Informations de l'auteur modifiées</value>
+  </data>
+  <data name="UpdateBook" xml:space="preserve">
+    <value>Informations du livre modifiées</value>
+  </data>
+  <data name="UpdateDoctor" xml:space="preserve">
+    <value>Informations du médecin modifiées</value>
+  </data>
+  <data name="UpdateEditor" xml:space="preserve">
+    <value>Informations de l'éditeur modifiées</value>
+  </data>
+  <data name="UpdateHospital" xml:space="preserve">
+    <value>Informations de l'hôpital modifiées</value>
+  </data>
+  <data name="UpdateNurse" xml:space="preserve">
+    <value>Informations de l'infirmier modifiées</value>
+  </data>
 </root>
