@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-C:\Users\Isabe\OneDrive\Desktop\bureau\BiblioBureau\BiblioBureau\HopitalDB\obj\Debug\net8.0-windows\
+C:\Users\Isabe\OneDrive\Desktop\bureau\BiblioBureau\BiblioBureau\HopitalDB\obj\Release\net8.0-windows\
 HopitalDB
 none
 false
-TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+TRACE;RELEASE;NET;NET8_0;NETCOREAPP
 C:\Users\Isabe\OneDrive\Desktop\bureau\BiblioBureau\BiblioBureau\HopitalDB\App.xaml
 11407045341
 
-82060502175
+8-1418860514
 198-556154604
 MainWindow.xaml;
 

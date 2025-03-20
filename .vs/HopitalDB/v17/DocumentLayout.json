@@ -1,13 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\israe\\Downloads\\HopitalDB Visibilit\u00E9 Recherche\\",
+  "WorkspaceRootPath": "C:\\Users\\Isabe\\OneDrive\\Desktop\\bureau\\BiblioBureau\\BiblioBureau\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3DDD367B-3EC7-4823-BDF3-01350435D388}|HopitalDB\\HopitalDB.csproj|c:\\users\\israe\\downloads\\hopitaldb visibilit\u00E9 recherche\\hopitaldb\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{3DDD367B-3EC7-4823-BDF3-01350435D388}|HopitalDB\\HopitalDB.csproj|c:\\users\\isabe\\onedrive\\desktop\\bureau\\bibliobureau\\bibliobureau\\hopitaldb\\properties\\resources.fr-fr.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{3DDD367B-3EC7-4823-BDF3-01350435D388}|HopitalDB\\HopitalDB.csproj|solutionrelative:hopitaldb\\properties\\resources.fr-fr.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DDD367B-3EC7-4823-BDF3-01350435D388}|HopitalDB\\HopitalDB.csproj|c:\\users\\isabe\\onedrive\\desktop\\bureau\\bibliobureau\\bibliobureau\\hopitaldb\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{3DDD367B-3EC7-4823-BDF3-01350435D388}|HopitalDB\\HopitalDB.csproj|solutionrelative:hopitaldb\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DDD367B-3EC7-4823-BDF3-01350435D388}|HopitalDB\\HopitalDB.csproj|c:\\users\\israe\\downloads\\hopitaldb visibilit\u00E9 recherche\\hopitaldb\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3DDD367B-3EC7-4823-BDF3-01350435D388}|HopitalDB\\HopitalDB.csproj|c:\\users\\isabe\\onedrive\\desktop\\bureau\\bibliobureau\\bibliobureau\\hopitaldb\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{3DDD367B-3EC7-4823-BDF3-01350435D388}|HopitalDB\\HopitalDB.csproj|solutionrelative:hopitaldb\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DDD367B-3EC7-4823-BDF3-01350435D388}|HopitalDB\\HopitalDB.csproj|c:\\users\\isabe\\onedrive\\desktop\\bureau\\bibliobureau\\bibliobureau\\hopitaldb\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3DDD367B-3EC7-4823-BDF3-01350435D388}|HopitalDB\\HopitalDB.csproj|solutionrelative:hopitaldb\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,7 +38,7 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
               "$type": "Bookmark",
@@ -43,10 +51,34 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Resources.fr-FR.resx",
+              "DocumentMoniker": "C:\\Users\\Isabe\\OneDrive\\Desktop\\bureau\\BiblioBureau\\BiblioBureau\\HopitalDB\\Properties\\Resources.fr-FR.resx",
+              "RelativeDocumentMoniker": "HopitalDB\\Properties\\Resources.fr-FR.resx",
+              "ToolTip": "C:\\Users\\Isabe\\OneDrive\\Desktop\\bureau\\BiblioBureau\\BiblioBureau\\HopitalDB\\Properties\\Resources.fr-FR.resx",
+              "RelativeToolTip": "HopitalDB\\Properties\\Resources.fr-FR.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-03-20T20:22:36.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "C:\\Users\\Isabe\\OneDrive\\Desktop\\bureau\\BiblioBureau\\BiblioBureau\\HopitalDB\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "HopitalDB\\Properties\\Resources.resx",
+              "ToolTip": "C:\\Users\\Isabe\\OneDrive\\Desktop\\bureau\\BiblioBureau\\BiblioBureau\\HopitalDB\\Properties\\Resources.resx",
+              "RelativeToolTip": "HopitalDB\\Properties\\Resources.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-03-20T20:21:41.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\israe\\Downloads\\HopitalDB Visibilit\u00E9 Recherche\\HopitalDB\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Isabe\\OneDrive\\Desktop\\bureau\\BiblioBureau\\BiblioBureau\\HopitalDB\\MainWindow.xaml",
               "RelativeDocumentMoniker": "HopitalDB\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\israe\\Downloads\\HopitalDB Visibilit\u00E9 Recherche\\HopitalDB\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Isabe\\OneDrive\\Desktop\\bureau\\BiblioBureau\\BiblioBureau\\HopitalDB\\MainWindow.xaml",
               "RelativeToolTip": "HopitalDB\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-03-20T19:33:08.873Z",
@@ -54,11 +86,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\israe\\Downloads\\HopitalDB Visibilit\u00E9 Recherche\\HopitalDB\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Isabe\\OneDrive\\Desktop\\bureau\\BiblioBureau\\BiblioBureau\\HopitalDB\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "HopitalDB\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\israe\\Downloads\\HopitalDB Visibilit\u00E9 Recherche\\HopitalDB\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Isabe\\OneDrive\\Desktop\\bureau\\BiblioBureau\\BiblioBureau\\HopitalDB\\MainWindow.xaml.cs",
               "RelativeToolTip": "HopitalDB\\MainWindow.xaml.cs",
               "ViewState": "AgIAAHIAAAAAAAAAAAAYwHgAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
